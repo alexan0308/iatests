@@ -789,23 +789,7 @@ i++;
  test[i][3] = "<code>s6:=s1; s1:=s3; s4:=s5;</code>";
  test[i][4] = "<code>s3:=s2; s2:=s3; s3:=s1;</code>"; 
  
-    //________________________ Множеста _______________________  
- i++;
- test[i] = new Array(); podskaska[i]=''; testType[i] = 'radio';
- test[i][0] = "???Имеется описание:"
- + '  <pre>' +
- '    var s1: set of 1..32;' + '<br>' +
- '        s2: set of \'a\'..\'e\';' + '<br>' +
- '        s3: set of 200..204;' + '<br>' +
- '        s4: 0..31;' + '<br>' +
- '        s5: set of (Sun, Mon, Tue, Web, Thu);' + '</pre>' + '<p>' +
 
- ' Количество переменных (из перечисленных), которые могут принимать не более 32 различных значений, равно ...';
- 
- test[i][1] = "5";
- test[i][2] = "2";
- test[i][3] = "4";
- test[i][4] = "1";
  
     //________________________ Указатели _______________________   
  
@@ -835,59 +819,12 @@ i++;
 i++;
 
  test[i] = new Array(); podskaska[i]=''; testType[i] = 'radio';
- test[i][0] = '? Решите схему<p><img src = "images/блок-схема 1.jpg"> </img>';
- test[i][1] = "?";
- test[i][2] = "?";
- test[i][3] = "?";
- test[i][4] = "?";
+ test[i][0] = '&#10003;Решите схему<p><img src = "images/блок-схема 1.jpg"> </img>';
+ test[i][1] = "50";
+ test[i][2] = "45";
+ test[i][3] = "-20";
+ test[i][4] = "0";
  
-i++;
-
- test[i] = new Array(); podskaska[i]=''; testType[i] = 'radio';
- test[i][0] = '? Решите схему<p><img src = "images/блок-схема 2.jpg"> </img>';
- test[i][1] = "?";
- test[i][2] = "?";
- test[i][3] = "?";
- test[i][4] = "?";
- 
- i++;
-
- test[i] = new Array(); podskaska[i]=''; testType[i] = 'radio';
- test[i][0] = '? Решите схему<p><img src = "images/блок-схема 3.jpg"> </img>';
- test[i][1] = "?";
- test[i][2] = "?";
- test[i][3] = "?";
- test[i][4] = "?";
- 
-i++;
-
- test[i] = new Array(); podskaska[i]=''; testType[i] = 'radio';
- test[i][0] = '? Решите схему<p><img src = "images/блок-схема 4.jpg"> </img>';
- test[i][1] = "?";
- test[i][2] = "?";
- test[i][3] = "?";
- test[i][4] = "?";
- 
- i++;
-
- test[i] = new Array(); podskaska[i]=''; testType[i] = 'radio';
- test[i][0] = '? Решите схему<p><img src = "images/блок-схема 5.jpg"> </img>';
- test[i][1] = "?";
- test[i][2] = "?";
- test[i][3] = "?";
- test[i][4] = "?";
- 
-i++;
-
- test[i] = new Array(); podskaska[i]=''; testType[i] = 'checkbox';
- test[i][0] = "???Переменные <code>a</code> и <code>b</code> имеют логический тип. " +
- "Выражения, эквивалентные выражению <code>(a < b) = a</code>, но не содержащие знаков операций отношения,на языке Паскаль могут быть записаны как (укажите два варианта ответа):"
- test[i][1] = "<code>not (a and b)</code>";
- test[i][2] = "<code>not a or not b</code>";
- test[i][3] = "<code>not (a or b)</code>";
- test[i][4] = "<code>not a and not b</code>";
-
-
 i++;
 
  test[i] = new Array(); podskaska[i]=''; testType[i] = 'radio';
@@ -905,142 +842,6 @@ i++;
  test[i][3] = "p2, f1";
  test[i][4] = "p1, f1";
 
-i++;
-
- test[i] = new Array(); podskaska[i]=''; testType[i] = 'radio';
- test[i][0] = "???Ложным является утверждение:";
- test[i][1] = "Вызов функции не является оператором";
- test[i][2] = "Вызов функции является оператором";
- test[i][3] = "Функция не может изменить значения своих параметров";
- test[i][4] = "Решение задачи, которую реализует функция, всегда можено описать процедурой ";
-
-i++;
-
- test[i] = new Array(); podskaska[i]=''; testType[i] = 'radio';
- test[i][0] = "???Имеется описание:"
- + '  <pre>' +
- '    type t_pi=^integer;' + '<br>' +
- '    var p1, p2: ^integer;' + '<br>' +
- '       q1, q2: t_pi;' + '<br>' +
- '       t: boolean;' + '<br>' +
- '       n: integer;' + '</pre><p>' +
-
- ' Недопустимым далее в программе будет использование выражения';
- 
- test[i][1] = "<code>q1 - q2</code>";
- test[i][2] = "<code>q1 = p2</code>";
- test[i][3] = "<code>q1 > q2</code>";
- test[i][4] = "<code>p1 = nil</code>";
-
- 
-i++;
- 
- test[i] = new Array(); podskaska[i]=''; testType[i] = 'radio';
- test[i][0] = "???Имеется описание: type t_arr=array[1..10] of real; Заголовок процедуры, которая инициализирует массив а и не использует глобальные переменные, может являться...";
- test[i][1] = "procedure read_array(var a:t_arr).";
- test[i][2] = "procedure read_array(var a:array[1..10] of real)";
- test[i][3] = "procedure read_array(var a:t_arr)";
- test[i][4] = "procedure read_array(a:t_arr)";
-
-i++;
-
-
- test[i] = new Array(); podskaska[i]=''; testType[i] = 'radio';
- test[i][0] = 
- '???Имеется описание: <br> ' +
- '  <pre>' +
- '    type t_arr=array[1..10] of real;' + '<br>' +
- '        read(b); a:=b;' + '<br>' +
- '        Var a: t_arr;' + '<br>' +
- '    b,c:array[1..10] of real;' + '<br>' +
- '       d:=t_arr;' + '<br>' +
- '          e:array[1..10] of real; +</pre>' + '<p>' +
-
-' Не содержит ошибки фрагмент программы...';
-
- test[i][1] = "b:=e,c:=b ";
- test[i][2] = "a:=b,b:=c";
- test[i][3] = "d:=e,a:=d";
- test[i][4] = "d:=a,b:=c";
-
-i++;
-
- test[i] = new Array(); podskaska[i]=''; testType[i] = 'radio';
- test[i][0] = "???Целочисленная переменная n инициализированна числом 237.Правльно описан оператор-переключатель...";
- 
- test[i][1] = "case n mod 7 of 1..3,5;a:=1;b:=3; 6:a:=2 else a:=3 end;";
- test[i][2] = "case n mod 7 of 1..3,5;a:=1; 6:a:=2 else a:=3 ;";
- test[i][3] = "case n mod 7 of 1..3,5;a:=1;  else a:=3; 6:a:=2; end;";
- test[i][4] = "case n mod 7 of 1..3,5;a:=1; 6:a:=2 else a:=3 end";
-
-
-
- 
-i++; 
- 
- 
-
- test[i] = new Array(); podskaska[i]=''; testType[i] = 'radio';
- test[i][0] = "???Имеется описание:"
- + '  <pre>' +
- '    var s1: set of \'a\'..\'z\';' + '<br>' +
- '        s2,s3: set of char;' + '<br>' +
- '        s4: set of \'0\'..\'9\';' + '<br>' +
- '        s5: set of \'A\'..\'Z\';' + '<br>' +
-
- ' После выполнения фрагмента программы' + '<br>' +
- 
- '        s1:=[\'a\'..\'d\',\'0\'];' + '<br>' +
- "        s2:=['0','6','0'];" + '<br>' +
- "        s4:=set of '0'..'9';" + '<br>' +
- "        s5:=set of 'A'..'Z';</pre>" + '<br>';
- 
- test[i][1] = "s6:=s1; s2:=s3; s6:=s3";
- test[i][2] = "s6:=s1; s1:=s3; s4:=s5";
- test[i][3] = "s1:=s6; s2:=s3; s5:=s4";
- test[i][4] = "s3:=s2; s2:=s3; s3:=s1";
- 
-
- i++;
- test[i] = new Array(); podskaska[i]=''; testType[i] = 'radio';
- test[i][0] = "???Определению <code>{<буква>}(<цифра>|<разделитель>)</code> не удовлетворяет конструкция... "
- test[i][1] = "<code>ABCD2,</code>";
- test[i][2] = "<code>3</code>";
- test[i][3] = "<code>AbS\}</code>";
- test[i][4] = "<code>A3</code>";
-
-i++;
-
- test[i] = new Array(); podskaska[i]=''; testType[i] = 'radio';
- test[i][0] = "???Целочисленный массив из 5 элементов инициализирован последовательностью 3, 1, 4, 5, 2. При сортировке этого массива по возрастанию пузырьком количество обменов значениями его элементов равно..."
- test[i][1] = "5";
- test[i][2] = "6";
- test[i][3] = "3";
- test[i][4] = "4";
- 
-
-i++;
-
- test[i] = new Array(); podskaska[i]=''; testType[i] = 'radio';
- test[i][0] = "???Количество синтаксических ошибок в операторе <code>if (a>b and b>c) then max:=a; else a:=b; </code> равно ";
- test[i][1] = "2";
- test[i][2] = "1";
- test[i][3] = "3";
- test[i][4] = "4";
-
-
-
-i++;
- test[i] = new Array(); podskaska[i]=''; testType[i] = 'radio'; 
- test[i][0] = "???Разрабатывается алгоритм для определения, пройдет ли кирпич с рёбрами x,y,z в прямоугольное окно со сторонами a,b. Причём рёбра кирпича должны быть параллельны или перпендикулярны сторонам окна. Колличество подзадач (из перечисленных ниже), которые должны быть выделенны на первом этапе решения этой задачи, равно...";
- 
- test[i][1] = "ответ1";
- test[i][2] = "ответ2";
- test[i][3] = "ответ3";
- test[i][4] = "ответ4";
- test[i][5] = "ответ5";
- 
- i++;
 
 var sssr = "<p>";
 for ( var i = 0; i < test.length; i++ ) {
