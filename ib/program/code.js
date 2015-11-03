@@ -819,7 +819,7 @@ i++;
 i++;
 
  test[i] = new Array(); podskaska[i]=''; testType[i] = 'radio';
- test[i][0] = '&#10003;Решите схему<p><img src = "images/блок-схема 1.jpg"> </img>';
+ test[i][0] = '&#10003;Решите схему<p><img src = "images/blok-sxema1.jpg"> </img>';
  test[i][1] = "50";
  test[i][2] = "45";
  test[i][3] = "-20";
